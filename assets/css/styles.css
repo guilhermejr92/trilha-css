@@ -28,7 +28,7 @@ section {
   height: 600px;
   padding-top: 60px;
   border-bottom: 1px solid #33A8DB80;
-  
+
 }
 
 .banner .banner-content {
@@ -84,6 +84,17 @@ section {
   border-radius: 30px;
 }
 
+.banner-content button {
+  background-color: #33A8DB;
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.banner-content button:hover {
+  background-color: #1472B7;
+}
+
 #course-content {
   width: 800px;
   text-align: center;
@@ -113,6 +124,7 @@ section {
   height: 560px;
   background-size: cover;
   background-image: url("../images/woman-code.png");
+  color: transparent;
   background-attachment: fixed;
   border-top: 1px solid #33A8DB80;
   border-bottom: 1px solid #33A8DB80;
@@ -151,4 +163,27 @@ footer a {
   color: #33A8DB;
   font-weight: bold;
   text-decoration: none;
+}
+
+a {
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #1472B7;
+}
+
+
+@media (max-width: 768px) {
+  .banner .banner-content {
+    width: 90%;
+  }
+
+  #course-content {
+    width: 90%;
+  }
+
+  #professional-challenges {
+    width: 90%;
+  }
 }
